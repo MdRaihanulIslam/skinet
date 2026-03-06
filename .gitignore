@@ -1,0 +1,17 @@
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Database files
+*.db
+*.sqlite
+
+# Rider / VSCode (optional)
+.idea/
+.vscode/
+API/appsettings.json
