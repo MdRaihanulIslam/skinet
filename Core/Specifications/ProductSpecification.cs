@@ -13,6 +13,8 @@ namespace Core.Specifications
         (specParams.Brands.Count==0 || specParams.Brands.Contains(x.Brand)) &&
         (specParams.Types.Count==0 || specParams.Types.Contains(x.Type)))
         {
+            ApplyPaging(specParams.PageSize * (specParams.PageSize - 1), specParams.PageSize);
+
             switch (specParams.Sort)
             {
                 case "priceAsc":

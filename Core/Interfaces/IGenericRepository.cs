@@ -1,4 +1,5 @@
-﻿using Core.Entities;
+﻿
+using Core.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,5 +21,6 @@ namespace Core.Interfaces
         void Remove(T entity);
         Task<bool> SaveAllAsync();
         bool Exists(int id);
+        Task<int> CountAsync(ISpecification<T> spec);
     }
 }

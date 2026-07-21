@@ -16,7 +16,7 @@ namespace Infrastructure.Data
             context.Set<T>().Add(entity);
         }
 
-        public bool Exists(int id)
+        public bool Exists(int id) 
         {
             return context.Set<T>().Any(x => x.Id == id);
         }
